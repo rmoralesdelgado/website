@@ -1,10 +1,11 @@
 +++
 title = "Test"
 author = "Raul Morales Delgado"
-lastmod = [":git", ":filename"]
+date = "2020-01-01"
 description = "This is just a test post..."
 toc = true
 tags = ["test", ]
+x = ["test", "tutorials"]
 +++
 
 ## Test
