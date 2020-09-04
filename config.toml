@@ -35,7 +35,7 @@ enableEmoji = true
 
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]
-  lastmod = [":git", ":fileModTime", "lastmod", "date", "publishDate"]
+  lastmod = [":git", "lastmod", "date", "publishDate"]  # Add ":fileModTime" for file's metadata
   publishDate = ["publishDate", "date"]
   expiryDate = ["expiryDate"]
 
