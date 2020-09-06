@@ -3,7 +3,7 @@
     {{ if $.Site.Copyright }}
     <div class="copyright copyright--user">
       <span>
-        {{ $.Site.Copyright | safeHTML }}
+        © {{ now.Year }} {{ $.Site.Copyright | safeHTML }}
       </span>
       <span>
         <a href="mailto:raul@rmoralesdelgado.com" title="Email" class="social-icon"><img src="/img/email.svg"></a>
