@@ -4,6 +4,7 @@ theme = "hello-friend"
 paginate = 5
 
 # Enables Hugo to grab info from git (specifically for lastmod date):
+# Note: for this to work CLI option must be set as well (--enableGitInfo) or passed as env variable (in netlify.toml)
 enableGitInfo = true
 
 # Enables emoji engine:
@@ -11,8 +12,7 @@ enableEmoji = true
 
 
 [params]
-  # dir name of your blog content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
+  # Sets the dir name of your blog content that will show up on your index page (baseurl):
   contentTypeName = "all"
 
   # "light" or "dark"
@@ -42,7 +42,7 @@ enableEmoji = true
 [languages]
   [languages.en]
     title = "Raul Morales Delgado"
-    subtitle = "Strange News From Another Star"
+    subtitle = "Reporting from another star"
     keywords = ""
     copyright = "Raul Morales Delgado"
     menuMore = "more"
@@ -59,7 +59,7 @@ enableEmoji = true
     
 
     [languages.en.params.logo]
-      logoText = "raul morales delgado"
+      logoText = "rmoralesdelgado.dev"
       logoHomeLink = "/"
     # or
     #
@@ -80,23 +80,11 @@ enableEmoji = true
         name = "tags"
         url = "/tags"
       [[languages.en.menu.main]]
-        identifier = "tutorials"
-        name = "tutorials"
-        url = "/content/tutorials"
-      [[languages.en.menu.main]]
-        identifier = "projects"
-        name = "projects"
-        url = "/content/projects"
-      [[languages.en.menu.main]]
-        identifier = "nuggets"
-        name = "nuggets"
-        url = "/content/nuggets"
-      [[languages.en.menu.main]]
-        identifier = "random"
-        name = "random"
-        url = "/random"
+        identifier = "categories"
+        name = "categories"
+        url = "/categories"
 
 
 [taxonomies]
-  content_type = "content"
+  category_type = "categories"
   tag = "tags"
