@@ -1,3 +1,21 @@
+/* Block to modify website's dark-theme colors */
+body.dark-theme {
+  /* dark theme colors */
+  --background: #000040;
+  --background-secondary: #000020;
+  --header: #000030;
+  --color: #c2c1cf;
+  --color-secondary: #d2d1dd;
+  --border-color: #d2d1dd;
+}
+
+/* Block to modify website's code snipett's background color */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #000020 !important;
+}
+
+/* Block to modify website's animated logo cursor's color */
 .logo__cursor {
     background-color: #0080ff;
   }
