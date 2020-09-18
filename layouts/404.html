@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="post">
+  <h1 class="post-title">
+    <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+  </h1>
+  <div class="post-content">
+    <p>
+      {{ "Sorry about that! This page seems to be missing. Here is a picture of my cat — for the trouble." | markdownify }}
+      <img
+        style="margin-top: 15px; margin-left: auto; margin-right: auto; max-width: 50%; width: 250px; height: auto; border-radius: 8px;"
+        src="/img/simba.jpg">
+    </p>
+
+    {{ if .Site.Taxonomies.tags }}
+    <p>
+      {{ "Also, check out these tags — maybe you'll find what you're looking for! :rocket:" | markdownify | emojify }}
+    </p>
+    <h2>Tags</h2>
+    <div class="terms">
+      <ul class="terms__list">
+        {{ range .Site.Taxonomies.tags }}
+        <li class="terms__term">
+          <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a><span class="terms__term-count">{{ .Count }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
