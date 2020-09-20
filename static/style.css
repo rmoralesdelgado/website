@@ -30,5 +30,12 @@ pre[class*="language-"] {
 a.social-icon img {
   display: inline-block;
   margin: 10px;
-  padding: 18px
+  padding: 10px
+}
+
+.framed {
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid #0080ff;
+  max-width: 800px;
 }
