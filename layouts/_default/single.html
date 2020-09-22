@@ -63,10 +63,14 @@
 
   <div class="post-content">
     {{ if or .Params.Toc $.Site.Params.Toc }}
+    <!-- Changed "Table of Contents" to "Contents" -->
     <h2>Contents</h2>
     <aside class="table-of-contents">{{ .TableOfContents }}</aside>
     {{ end }}
-    {{ .Content }}
+
+    <!-- Block changed to include anchors for all headings -->
+    {{ partial "anchors.html" .Content }}
+    <!-- before it was only "{{ .Content }}" -->
   </div>
 
   {{ if eq .Type $.Site.Params.contentTypeName }}
