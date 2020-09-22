@@ -12,4 +12,4 @@ As a Data Scientist, while I am very passionate about AI — ML, deep learning, 
 
 This website is a blog about my work in the previously described fields — here you will find [**projects**](/categories/projects), [**tutorials**](/categories/tutorials) that started as notes, small articles — [**nuggets**](/categories/nuggets) — about more specific things, and a bit of [**random**](/categories/random) posts about things I like (like $\text{typography}$ :ghost:).
 
-Please contact me through any of the following (see footer).
+Please feel free to contact me or see my work through any of the following at the footer.
