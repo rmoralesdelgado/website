@@ -12,4 +12,4 @@ The following features have been enabled for this website:
 * Support for LaTeX with MathJax
 * *more coming soon...*
 
-For how-to create a website with this features, please visit my [website](https://rmoralesdelgado.dev).
+For how-to create a website with this features, please refer to my post on [deploying a website with Hugo](https://rmoralesdelgado.dev/all/deploying-website-hugo/). 
