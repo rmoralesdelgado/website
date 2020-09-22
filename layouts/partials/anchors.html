@@ -1,0 +1,2 @@
+<!-- Partial to place anchors for all headings -->
+{{ . | replaceRE "(<h[2-6] id=\"([^\"]+)\".+)(</h[2-6]+>)" "${1}&nbsp;<a class=\"anchor\" href=\"#${2}\">#</a> ${3}" | safeHTML }}
