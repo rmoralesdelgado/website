@@ -38,4 +38,17 @@ a.social-icon img {
   border-radius: 10px;
   border: 0px solid #0080ff;
   max-width: 800px;
+  background-color: var(--background-secondary);
+}
+
+.anchor { 
+  font-size: 75%; 
+  visibility: hidden; 
+  color:currentColor;
+}
+
+h1:hover a, h2:hover a, h3:hover a, h4:hover a { 
+  visibility: visible;
+  opacity: 60%;
+  text-decoration: none;
 }
