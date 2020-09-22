@@ -52,3 +52,8 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
   opacity: 60%;
   text-decoration: none;
 }
+
+.collapsable-code {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
