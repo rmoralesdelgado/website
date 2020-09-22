@@ -1,11 +1,11 @@
 +++
 categories = ["templates"]
-title = "Website Template"
+title = "Website Showcase & Template"
 description = "Template and showroom for website's features."
 author = "Raul Morales Delgado"
 date = "2020-09-01"
 toc = true
-tags = ["markdown", "latex", "plotly"]
+tags = ["hugo", "markdown", "latex", "bokeh"]
 ismath = true
 +++
 
