@@ -1,3 +1,5 @@
+.vscode
 node_modules
-style.css_*
+resources/_gen/**/*
 *.DS_Store*
+**/_src/**/*
