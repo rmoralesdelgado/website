@@ -34,6 +34,7 @@ expiryDate = ["expiryDate",]  # Won't appear anymore after expiryDate
 toc = true  # Table of Contents; default is "false", but can be manually set to "true" on a per-post basis
 tags = ["a", "b", "c"]  # Open list with post's tags
 ismath = true  # Only necessary if post contains latex-like formulae.
+isbokeh = true  # Only necessary if post contains Bokeh plots.
 +++
 ```
 
@@ -173,4 +174,10 @@ will yield this result:
 \\end{array}
 
 ## Bokeh Support
-*Coming soon.*
+>**Note:** To enable Bokeh support, the `isbokeh = true` key-value must be placed in the front matter.
+
+This website also supports [Bokeh](https://docs.bokeh.org/en/latest/index.html) plot embedding. This feature uses the `isbokeh` key-value in the front matter in order to load the Bokeh JavaScript scripts on-demand (thus reducing loading times when it is not needed).
+
+The following is an [example](https://docs.bokeh.org/en/latest/docs/gallery/hexbin.html) from Bokeh's gallery that has been slightly modified.
+
+{{< bokeh "bokehs/test.json" >}}

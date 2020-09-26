@@ -7,6 +7,11 @@
 {{ partial "mathjax.html" . }}
 {{ end }}
 
+<!-- If- block added to enable Bokeh support -->
+{{ if .Page.Params.isBokeh }}
+{{ partial "isBokeh.html" . }}
+{{ end }}
+
 <div class="post">
   <h1 class="post-title">{{ .Title | markdownify }}</h1>
   <div class="post-meta">
