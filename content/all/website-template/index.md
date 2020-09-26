@@ -7,6 +7,7 @@ date = "2020-09-01"
 toc = true
 tags = ["hugo", "markdown", "latex", "bokeh"]
 ismath = true
+isbokeh = true
 +++
 
 
@@ -143,6 +144,10 @@ This website also features emoji support :see_no_evil:. The reference for suppor
 
 ## Mathjax for LaTeX Support
 >**Note:** To enable $\LaTeX$ support, the `ismath = true` key-value must be placed in the front matter.
+
+This website supports $\LaTeX$ using MathJax. This feature uses the `ismath` key-value in the front matter in order to load the MathJax JavaScript scripts on-demand (thus reducing loading times when it is not needed). 
+
+Below are examples of what's possible to embed.
 
 ### Inline LaTeX
 Inline equations only need one `$` at each side. For instance, this integral `$\int x^3 dx$` will be transformed into this $\int x^3 dx$.
