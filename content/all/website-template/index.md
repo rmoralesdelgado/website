@@ -39,15 +39,6 @@ isbokeh = true  # Only necessary if post contains Bokeh plots.
 +++
 ```
 
-## Accessing Resources
-Accessing resources — i.e. calling files in a post — depends on the resource type: static (i.e. absolute) from the `/static` directory, or relative, located at post's current directory. 
-
-This website has been designed to have each post in a unique subdirectory, `/content/../post/`. The post itself will be an `index.md` file located in such path and ad hoc content for a post can be organized in subdirectories, e.g. `/contents/projects/my-first-post/img/photo-1.jpg`.
-
-To access static resources, a file must be called using an absolute path whose root is at `/static`. For instance, a static picture can be accessed using `/my-photo.jpg`, or `/img/my-photo.jpg` (if its located at `/static/img/my-photo.jpg`).
-
-To access relative resources, a file must be called using a relative path to the post's `index.md` file. For instance, to access `/content/projects/my-first-post/img/photo-1.jpg`, one must call `img/photo-1.jpg`. Note that there is no `/` at the beginning — making it a relative path — and that `index.md` would be at the same level as the `img/` subdirectory.
-
 
 ## Headings with Anchors
 This website supports automatic anchors for headings — all headings (i.e. `h{2..6}`) will have a `#` next to the heading referencing the URL of the heading. These anchors have set to be invisible by default, and only visible when hovering.
@@ -142,6 +133,7 @@ import numpy as np
 
 This website also features emoji support :see_no_evil:. The reference for supported emojis can be found [here](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
+
 ## Mathjax for LaTeX Support
 >**Note:** To enable $\LaTeX$ support, the `ismath = true` key-value must be placed in the front matter.
 
@@ -178,6 +170,7 @@ will yield this result:
   c & c
 \\end{array}
 
+
 ## Bokeh Support
 >**Note:** To enable Bokeh support, the `isbokeh = true` key-value must be placed in the front matter.
 
@@ -186,3 +179,28 @@ This website also supports [Bokeh](https://docs.bokeh.org/en/latest/index.html) 
 The following is an [example](https://docs.bokeh.org/en/latest/docs/gallery/hexbin.html) from Bokeh's gallery that has been slightly modified.
 
 {{< bokeh "bokehs/test.json" >}}
+
+By supporting Bokeh, this website also supports [Holoviews](https://holoviews.org/index.html) plots using a Bokeh backend:
+
+{{< bokeh "bokehs/holotest.json" >}}
+
+Note, though, that Holoviews is a tool to simplify plotting with several backends — a high-level API to make plotting easier; similar to what Seaborn is to Matplotlib. When a plot is made with Holoviews, it needs to be rendered as a Bokeh object to then be dumped as a JSON file. 
+
+
+## Social Icons
+To allow the user present its social networking links, this website features social icons that have been wrapped up in a partial and a shortcode, such that the icons can be easily modified (e.g. add a new icon for a new social service) and the set of icons can be easily added anywhere in this site by calling the shortcode:
+
+{{< socialicons >}}
+
+
+## Raw HTML
+In order to add raw HTML code into a Markdown file, this website features a shortcode that does so. While this feature might not be something frequently needed — part of the objective of using Markdown with Hugo is to avoid writing HTMLs altogether —, there can be cases in which granular customization or embedding of specific objects might be needed. For instance, an embedded Google map would look like this:
+
+{{< rawhtml >}}
+<p style="text-align:center">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5774.538501083268!2d-79.38924548498251!3d43.642566179121665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e0!3m2!1sen!2sca!4v1601877315775!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</p>
+{{< /rawhtml >}}
+
+And that's a wrap! This post will be updated if new features are deployed.
+
