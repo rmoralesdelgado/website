@@ -19,7 +19,7 @@ The purpose of this post is to serve as a test for deploying new website feature
 The following code is a `toml` front matter template used for all documents in this website. Values for taxonomies depend on the key.
 ```toml
 +++
-content = ["tutorials", "projects", "nuggets", "templates"]  # This is closed to these values
+categories = ["tutorials", "projects", "nuggets", "templates"]  # This is closed to these values
 author = "Raul Morales Delgado"
 title = "Title for Document"
 description = "Description for the document. Intro-like text."
