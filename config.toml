@@ -10,6 +10,9 @@ enableGitInfo = true
 # Enables emoji engine:
 enableEmoji = true
 
+# Enables comments with Disqus
+disqusShortname = "rmoralesdelgado"
+
 
 [params]
   # Sets the dir name of your blog content that will show up on your index page (baseurl):
