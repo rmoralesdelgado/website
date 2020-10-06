@@ -11,7 +11,7 @@ enableGitInfo = true
 enableEmoji = true
 
 # Enables comments with Disqus
-disqusShortname = "rmoralesdelgado"
+disqusShortname = "rmoralesdelgado-dev"
 
 
 [params]
