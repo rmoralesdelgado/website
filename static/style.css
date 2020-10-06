@@ -18,21 +18,21 @@ pre[class*="language-"] {
 /* Block to modify website's animated logo cursor's color */
 .logo__cursor {
     background-color: #0080ff;
-  }
-
-.image-left {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
 }
 
+/* Block to add margin before Disqus comments */
+.pagination {
+  margin-bottom: 20px
+}
+
+/* Block to style social icons */
 a.social-icon img {
   display: inline-block;
   margin: 10px;
   padding: 10px
 }
 
+/* Block to style intro frame in landing page (_index.md) */
 .framed {
   padding: 15px;
   border-radius: 10px;
@@ -41,6 +41,7 @@ a.social-icon img {
   background-color: var(--background-secondary);
 }
 
+/* Blocks style heading anchor style and effects */
 .anchor { 
   font-size: 75%; 
   visibility: hidden; 
@@ -53,6 +54,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
   text-decoration: none;
 }
 
+/* Block to override code.css to reduce margin */
 .collapsable-code {
   position: relative;
   width: 100%;
