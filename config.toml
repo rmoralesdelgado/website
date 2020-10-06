@@ -43,7 +43,7 @@ enableEmoji = true
   [languages.en]
     title = "Raul Morales Delgado"
     subtitle = "Reporting from another star"
-    keywords = ""
+    keywords = "blog, data science, machine learning, ai"
     copyright = "Raul Morales Delgado"
     menuMore = "more"
     writtenBy = "Written by"
