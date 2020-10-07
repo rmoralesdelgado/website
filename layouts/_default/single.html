@@ -106,6 +106,9 @@
   </div>
   {{ end }}
   {{ end }}
+  
+  <!-- Block added to insert a separator before comment section -->
+  <hr class="comments">
 
   {{ if not (eq .Params.Comments "false") }}
   {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}

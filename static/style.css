@@ -20,9 +20,16 @@ pre[class*="language-"] {
     background-color: #0080ff;
 }
 
-/* Block to add margin before Disqus comments */
+/* Blocks to set margin and separator before Disqus comments */
 .pagination {
-  margin-bottom: 20px
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+hr.comments {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Block to style social icons */
