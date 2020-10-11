@@ -8,14 +8,13 @@ toc = true
 tags = ["git", "devops", ]
 +++
 
-## Introduction
 I was recently facing a Git situation in which I had to rebase a section of a branch onto a specific commit of `master`. That is, I wanted to rebase only a portion of my branch onto a different parent commit of `master` than the current one. When doing so, however, I wanted to keep the previous branch and make the new one, a detached `HEAD` by default, into a branch I can work on.
 
 If you've never got a problem like this in Git, don't worry — you *will*. I looked for solutions and I found this extremely helpful blog [post](https://womanonrails.com/git-rebase-onto) — it provides an answer on how to cut a section of a branch and rebase it onto master. However, it lacked the answer as to how to recover the detached `HEAD` pointing to the commits that form the section of the branch that was cut.
 
 In this post, I will present a solution for this problem.
 
-## git rebase -\-onto
+## 1. git rebase -\-onto
 To those familiar with `git rebase`, its basic syntaxis is the following:[^1]
 ```bash
 git rebase [-i | --interactive] [<options>] [--exec <cmd>]
@@ -41,7 +40,7 @@ Remember that a branch is just a pointer to a commit — the last one in that br
 >**Note:** This post will not delve into the `git rebase` command. There is plenty official [documentation](https://git-scm.com/docs/git-rebase) and [nice tutorials](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) on how to use it.
 
 
-## Sectioning and Rebasing a Branch
+## 2. Sectioning and Rebasing a Branch
 As mentioned earlier, the command presented above allows not only to rebase a branch to a new parent but also to section it — to extract only a part of it. Imagine we have the following commit history:
 ```text
 1 — 2 — 3 — 4 — 5 — 6 — 10 — 11 — 12 — 13 — 14 (master)
@@ -77,7 +76,7 @@ But is it a real branch? Not yet. Regardless if it is 1 or 100 commits, if we ra
 The `*` above indicates where `HEAD` is pointing to — we explained before that a successful execution of `git rebase` will leave the `HEAD` pointing to the argument passed in to `<branch>` — in this case commit `8'`. So, how do we recover that new branch where `HEAD` is pointing to and make it a new branch on which we can start working?
 
 
-## Making the Detached HEAD a Branch
+## 3. Making the Detached HEAD a Branch
 If you were to start working straight away, you would be able to make changes and commit them, undo commits, and so on. However, all these changes will only exist as long as you are *in this branch*. If you checkout another branch, e.g. `git checkout master`, then changes made on this `HEAD detached` *branch* will stop existing and will be lost.[^2] 
 
 In order to start working on this branch, a new branch needs to be created. We can do so using the following syntaxis of `git checkout`:
