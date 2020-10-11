@@ -106,7 +106,7 @@ Finally, imagine that you did all this because you already had a branch `test`, 
 git checkout -B <branch> HEAD
 ```
 
-Option `-B` on `git checkout` allows reset an existing branch and point it to `<start_point>`.
+Option `-B` on `git checkout` allows to reset an existing branch and point it to `<start_point>`.
 
 [^1]: Git rebase [documentation](https://git-scm.com/docs/git-rebase)
 [^2]: There are [ways](https://stackoverflow.com/a/14757539/11905552) to recover that last commit you made on the `HEAD detached` *branch*. However, this ways rely on the reflog, which is periodically cleaned by Git — it is not a permanent log.
