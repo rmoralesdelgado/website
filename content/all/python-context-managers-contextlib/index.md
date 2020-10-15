@@ -1,5 +1,5 @@
 +++
-categories = ["tutorial", ]
+categories = ["tutorials", ]
 author = "Raul Morales Delgado"
 title = "Context Managers with Python's contextlib"
 description = "Because managing resources in Python is better with context managers — and context managers are easier with `contextlib`. This article is a small tutorial on why context managers are easier with `contextmanager` from `contextlib`, where its similarities to a full implementation of with-statement context managers start to become blurrier, and how to effectively handle exceptions."
