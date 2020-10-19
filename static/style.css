@@ -32,6 +32,11 @@ pre[class*="language-"] {
     background-color: #0080ff;
 }
 
+/* Block to change links color on hover */
+.post-content a:hover {
+  color: #0080ff;
+}
+
 /* Blocks to set margin and separator before Disqus comments */
 .pagination {
   margin-top: 30px;
