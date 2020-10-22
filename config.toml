@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend"
-paginate = 5
+paginate = 20
 
 # Enables Hugo to grab info from git (specifically for lastmod date):
 # Note: for this to work CLI option must be set as well (--enableGitInfo) or passed as env variable (in netlify.toml)
