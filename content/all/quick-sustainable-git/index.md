@@ -443,11 +443,11 @@ To create a GitHub repository, go to [GitHub](https://github.com), click on the 
 
 Below, add a short description of what this repo is all about (this information is going to be added to `README.md`, but you can change it afterwards if you want). Then, set the repository to `Public` — after all you want to showcase your work — and check on the `Initialize this repository with a README` box. Finally, click on the `Add a license:` button and choose the `MIT` license (it is a very generic license, but be sure to read it before you agree to it). Your final setup should look something like this:
 
-<img src="https://ramd-public-bucket.s3.ca-central-1.amazonaws.com/tutorials-git-and-github-creating-repo.png" alt='How the setup should look like' width=700>
+{{< figure src="img/01-creating-repo.png" alt="Setting up a repository" position="center" style="border-radius: 8px; max-width: 600px; margin: auto" caption="How the setup should look like. (Source: Raul Morales Delgado)" captionPosition="center" captionStyle="color: currentColor;" >}}
 
 Finally, click on `Create repository`. Your new repository should look as follows:
 
-<img src="https://ramd-public-bucket.s3.ca-central-1.amazonaws.com/tutorials-git-and-github-repo-created.png" alt='New repository just created' width=700>
+{{< figure src="img/02-repo-created.png" alt="New repository" position="center" style="border-radius: 8px; max-width: 600px; margin: auto" caption="New repository just created. (Source: Raul Morales Delgado)" captionPosition="center" captionStyle="color: currentColor;" >}}
 
 
 ## 13. Setting Up the Remote Repository
@@ -1117,4 +1117,4 @@ I hope this was useful for you. Please let me know your thoughts in the comments
 
 * [Git Official Documentation](https://git-scm.com/doc)
 
-If there is any link, source or citation inadequately described, please let me know and I will fix it as soon as possible.
+If there is any link, source or citation inadequately described or omitted, please let me know and I will fix it as soon as possible.
